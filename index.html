@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fons Bar</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+  <img class="logo" src="./images/logo.png" alt="Fons bar">
+
+  <!-- Tabla de la Cuenta -->
+  <div class="tabla-pedido" id="tabla-pedido">
+    <table class="tabla">
+      <thead>
+        <tr>
+          <th>Pedido</th>
+          <th>Cantidad</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
+      <tbody id="carrito-body">
+  
+      </tbody>
+      <tfoot id="footer">
+        <tr><td colspan = 3>Aún no comenzaste tu pedido.</td></tr>
+      </tfoot>
+    </table>
+  </div>
+  
+  <!-- Template de las filas -->
+  <template id="agregar-producto-al-carro">
+    <tr>
+          <td id="producto">Fernet Branca</td>
+          <td><button id="menos-cantidad" class="button">-</button><span id="cant">1</span><button id='mas-cantidad' class="button">+</button></td>
+          <td class="precio-tabla" id="precio-total-prod">2400</td>
+        </tr>
+  </template>
+
+  <!-- Template del footer de la tabla -->
+  <template id="tfooter">
+    <tr>
+      <td colspan="1">
+        <button id="vaciar-tabla" class="button">Vaciar pedido</button>
+        <button id="realizar-pedido" class="button">Realizar pedido</button>
+      </td>
+      <td class="negrita">Total a pagar</td>
+      <td id="total-a-pagar" class="precio-tabla negrita">2400</td>
+    </tr>
+  </template>
+  
+<!-- Aqui se insertan los productos con JavaScript en una lista -->
+<table class="lista-productos" id="lista-productos">
+  <thead>
+    <tr>
+      <th class="linea-bot">Nombre</th>
+      <th class="linea-bot">Descripción</th>
+      <th class="linea-bot">Precio</th>
+      <th class="linea-bot">Agregar</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+<!-- template del producto -->
+<template id="template-prod">
+  <tr>
+    <td class="nombre-prod linea-bot">Nombre Producto</td>
+    <td class="descripcion-prod linea-bot">Descripción del producto</td>
+    <td class="precio linea-bot">Precio Producto</td>
+    <td><button class="boton linea-bot">Agregar</button></td>
+  </tr>
+</template>
+
+<footer>
+  <p class="copyright">Copyright &copy; 2024 All rights reserved | por Nahuel Fons</p>
+</footer>
+
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</body>
+</html>

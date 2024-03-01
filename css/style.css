@@ -1,0 +1,116 @@
+html {
+    background-color: rgb(24, 24, 24);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  body {
+    margin: 0;
+    box-sizing: border-box;
+    --border-table: 1px solid rgb(243, 243, 243); /* Tabla */
+  }
+  h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  .logo {
+    width: 30%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  .copyright {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  /* Tabla de pedidos */
+  .tabla-pedido {
+    display: flex;
+    justify-content: center;
+  }
+  .tabla {
+    width: 50%;
+    border-collapse: collapse;
+    color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
+    empty-cells: hide;
+    border: var(--border-table);
+  }
+  
+  /*Titulo tabla pedidos */
+  th {
+    font-size: 1.1rem;
+    background-color: rgb(24, 24, 24);
+  }
+  th, td, tr {
+    color: rgb(255, 255, 255);
+    border: var(--border-table);
+    text-align: center;
+    padding: .3rem;
+  }
+  .linea-bot {
+    border: none;
+    border-bottom: 1px solid rgb(243, 243, 243);
+  }
+  .precio-tabla::before {
+    content: '\0024';
+    padding-right: 0.4rem;
+  }
+  .button { /* Boton tabla pedido */
+    margin: 0 .4rem;
+    background-color: #dfdfdf;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .button:hover {
+    background-color: #b9b9b9;
+  }
+  .negrita {
+    font-weight: bold;
+  }
+  
+  /* Textos de tabla */
+  .div-info {
+    flex: 1;
+    overflow: hidden;
+  }
+  .nombre-prod {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 0.2rem 1rem;
+  }
+  .descripcion-prod {
+    margin: 0;
+    font-size: 0.9rem;
+    text-align: left;
+    padding: 0.2rem 1rem;
+    overflow: hidden;
+  }
+  /* Texto precio y botones de tabla */
+  .precio {
+    margin: 0 .5em;
+    padding: 0.2rem 1rem;
+  }
+  .precio::before {
+    content: '\0024';
+    padding-right: 0.3rem;
+  }
+  .boton { /* Boton Agregar*/
+    margin: 0 .4rem;
+    background-color: #dfdfdf;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .boton:hover {
+    background-color: #b9b9b9;
+  }
+  
+  /* Contenedor de la cartilla */
+  .lista-productos {
+    margin: auto;
+  }
